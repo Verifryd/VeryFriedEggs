@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fried Eggs - Home</title>
+    <title>Fried Eggs</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -17,17 +16,17 @@
         <img src="assets/image.png">
         <div class="product">
             <a href="faberge.html"><img src="Faberge.gif" alt="Fabergé Egg">
-            <button class="purchase">Steal Priceless Art</button>
+            <button id="FabergeButton" onclick="location.href='Faberge.html'">Steal Priceless Art</button>
         </div>
         <div class="product">
             <a href="kringlekronic.html"><img src="KringleKronic.gif" alt="Kringle Kronic">
-            <button class="purchase">H⬯ H⬯ H⬯</button>
+            <button id="KringleButton" onclick="location.href='Kringle.html'">H⬯ H⬯ H⬯</button>
         </div>
         <div class="product">
             <a href="DontPresstheEgg.html"><img src="DPtE.gif" alt="Don't Press the Egg">
-            <button class="purchase">Press Egg</button>
+            <button id="DontPressTheButton" onclick="location.href='DontPressTheEgg.html'">Press Egg</button>
         </div>
-
+        <script src="script.js"></script>
     </main>
     <footer>
         <button id="classifriedButton">Classifried (requires 3 early eggccess tokens)</button>
