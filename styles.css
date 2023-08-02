@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    font-family: 'Rounds Black', sans-serif;
+    background: linear-gradient(orange, yellow);
 }
 
 #content {
@@ -16,4 +17,24 @@ body {
     border: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+#indexPage {
+    background-color: white;
+    /* Other styles for the index page */
+}
+
+#homePage {
+    background: linear-gradient(orange, yellow);
+    /* Other styles for the home page */
+}
+
+#verifrydImage {
+    width: 150px;
+    height: auto;
+}
+
+#friedeggsImage {
+    width: 150px;
+    height: auto;
 }
