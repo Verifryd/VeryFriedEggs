@@ -14,18 +14,19 @@ document.getElementById('purchaseButton').addEventListener('click', function() {
     });
 });
 
-
 document.getElementById('kringleButton').addEventListener('click', function() {
+    // Hide the product image and show the video player
     document.getElementById('kringleImage').style.display = 'none';
     var video = document.getElementById('kringleVideo');
     video.style.display = 'block';
     video.play();
 
+    // When the video ends, change the kringle Egg image to the EarlyEggcessB GIF
+    // and hide the video
     video.addEventListener('ended', function() {
         document.getElementById('kringleImage').src = 'assets/EarlyEggcessB.gif';
         document.getElementById('kringleImage').style.display = 'block';
         video.style.display = 'none';
-        document.getElementById('nextButton').disabled = false;
     });
 });
 
