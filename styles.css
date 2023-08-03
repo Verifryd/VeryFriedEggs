@@ -102,23 +102,23 @@ body.index {
     background: #fff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #fabergeImage {
-    width: 75%;
+    width: 50%;
     height: auto;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #kringleImage {
-    width: 75%;
+    width: 50%;
     height: auto;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #dpteImage {
-    width: 75%;
+    width: 50%;
     height: auto;
   }
 }
