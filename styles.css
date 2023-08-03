@@ -8,6 +8,17 @@ body {
     margin: 0;
 }
 
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    flex: 1 0 200px;  /* Adjust the '200px' to whatever minimum width you want for your products */
+    margin: 10px;
+}
+
 #content {
     display: flex;
     flex-direction: column;
