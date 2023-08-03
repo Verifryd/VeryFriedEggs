@@ -35,6 +35,29 @@ document.getElementById('productVideo').addEventListener('ended', function() {
     document.getElementById('nextButton').disabled = false;
 });
 
+var purchaseButton = document.getElementById('purchaseButton');
+var kringlePurchaseButton = document.getElementById('kringlePurchaseButton');
+var dptePurchaseButton = document.getElementById('dptePurchaseButton');
+
+if (purchaseButton) {
+    purchaseButton.addEventListener('click', function() {
+        // Fabergé Egg functionality
+    });
+}
+
+if (kringlePurchaseButton) {
+    kringlePurchaseButton.addEventListener('click', function() {
+        // Kringle Kronic functionality
+    });
+}
+
+if (dptePurchaseButton) {
+    dptePurchaseButton.addEventListener('click', function() {
+        // Don't Press the Egg functionality
+    });
+}
+
+
 window.onload = function() {
     // your code here
 };
