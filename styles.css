@@ -81,3 +81,7 @@ button:hover {
   height: 400px;
 }
 
+.product {
+    background: linear-gradient(to right, orange, yellow);
+}
+
