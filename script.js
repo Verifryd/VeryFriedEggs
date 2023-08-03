@@ -14,10 +14,10 @@ document.getElementById('purchaseButton').addEventListener('click', function() {
     });
 });
 
-document.getElementById('purchaseButton').addEventListener('click', function() {
+document.getElementById('kringleButton').addEventListener('click', function() {
     // Hide the product image and show the video player
     document.getElementById('kringleImage').style.display = 'none';
-    var video = document.getElementById('productVideo');
+    var video = document.getElementById('kringleVideo');
     video.style.display = 'block';
     video.play();
 
@@ -30,10 +30,10 @@ document.getElementById('purchaseButton').addEventListener('click', function() {
     });
 });
 
-document.getElementById('purchaseButton').addEventListener('click', function() {
+document.getElementById('dpteButton').addEventListener('click', function() {
     // Hide the product image and show the video player
     document.getElementById('DPtEImage').style.display = 'none';
-    var video = document.getElementById('productVideo');
+    var video = document.getElementById('dpteVideo');
     video.style.display = 'block';
     video.play();
 
@@ -51,5 +51,14 @@ document.getElementById('productVideo').addEventListener('ended', function() {
     document.getElementById('nextButton').disabled = false;
 });
 
+document.getElementById('dpteVideo').addEventListener('ended', function() {
+    // Enable the "Next Egg" button when the video has ended
+    document.getElementById('nextButton').disabled = false;
+});
+
+document.getElementById('kringleVideo').addEventListener('ended', function() {
+    // Enable the "Next Egg" button when the video has ended
+    document.getElementById('nextButton').disabled = false;
+});
 
 
