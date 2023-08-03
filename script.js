@@ -14,7 +14,7 @@ document.getElementById('purchaseButton').addEventListener('click', function() {
     });
 });
 
-document.getElementById('kringlepurchaseButton').addEventListener('click', function() {
+document.getElementById('kringleproductButton').addEventListener('click', function() {
     // Hide the product image and show the video player
     document.getElementById('kringleImage').style.display = 'none';
     var video = document.getElementById('kringleproductVideo');
@@ -30,7 +30,7 @@ document.getElementById('kringlepurchaseButton').addEventListener('click', funct
     });
 });
 
-document.getElementById('dptepurchaseButton').addEventListener('click', function() {
+document.getElementById('dpteproductButton').addEventListener('click', function() {
     // Hide the product image and show the video player
     document.getElementById('dpteImage').style.display = 'none';
     var video = document.getElementById('dpteproductVideo');
