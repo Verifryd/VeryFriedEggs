@@ -59,11 +59,9 @@ body {
 }
 
 img {
-    max-width: 100%;
-    height: 400px; /* Set this to the desired height */
-    object-fit: cover; /* This will make sure your images cover the full width and height of their box */
+    max-width: 75%; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
+    height: auto; /* This will keep the image's aspect ratio intact */
 }
-
 
 button {
   font-size: 3em; /* Adjust as needed */
