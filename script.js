@@ -28,3 +28,17 @@ document.getElementById('fabergeImage').addEventListener('click', function() {
         document.getElementById('fabergeImage').style.display = 'block';
     });
 });
+
+document.getElementById('purchaseButton').addEventListener('click', function() {
+    // Hide the product image and show the video player
+    document.getElementById('fabergeImage').style.display = 'none';
+    var video = document.getElementById('productVideo');
+    video.style.display = 'block';
+    video.play();
+
+    // When the video ends, change the Fabergé Egg image to the EarlyEggcessA GIF
+    video.addEventListener('ended', function() {
+        document.getElementById('fabergeImage').src = 'assets/EarlyEggcessA.gif';
+        document.getElementById('fabergeImage').style.display = 'block';
+    });
+});
