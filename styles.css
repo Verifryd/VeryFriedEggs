@@ -59,3 +59,19 @@ img {
     max-width: 100%; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
     height: auto; /* This will keep the image's aspect ratio intact */
 }
+
+button {
+  font-size: 3em; /* Adjust as needed */
+  padding: 10px 20px; /* Adjust as needed */
+  color: white; /* Adjust as needed */
+  background-color: orange; /* Adjust as needed */
+  border: 2 px;
+  border-radius: 5px; /* Adjust as needed */
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: red; /* Adjust as needed */
+}
