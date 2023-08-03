@@ -95,7 +95,7 @@ button:hover {
 }
 
 .backButton, .nextButton {
-    margin-top: 20px; /* Adjust this value as needed */
+    margin-top: 5px; /* Adjust this value as needed */
 }
 
 body.index {
