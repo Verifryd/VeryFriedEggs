@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Egg</title>
+</head>
+
+<body>
+    <section id="transition" >
+        <img src="https://i.pinimg.com/originals/d5/b2/a8/d5b2a8655a0ec8a562a18c589d82f667.png" width="100" >
+        <div style="width: 20px"></div>
+        <div>
+            Roadmap: <br>
+            World record <br>
+            egg collab
+        </div>
+        <div style="width: 20px"></div>
+
+        <img src="https://i.pinimg.com/originals/d5/b2/a8/d5b2a8655a0ec8a562a18c589d82f667.png" width="100" >
+
+    </section>
+    <audio id="music" src="../static/music/andy shit w drill.mp3" loop></audio>
+    <audio id="keypress" src="../static/music/keypress.mp3"></audio>
+    <div id="splash-screen">
+        <button id="enter-button">LOADING...</button>
+        <video playsinline autoplay muted loop src="../static/cutscenes/DVDMenu.mp4"></video>
+    </div>
+    <div id="drop">
+        <video playsinline src="../static/cutscenes/preloader.mp4"  muted></video>
+    </div>
+    <div id="invisible">
+        <video playsinline src="../static/cutscenes/invisible.mp4" autoplay  muted></video>
+    </div>
+    <div id="ross">
+        <video playsinline src="../static/cutscenes/ross.mp4" autoplay  muted></video>
+    </div>
+    <div id="scroll">
+        <video playsinline src="../static/cutscenes/EggRooms1.mp4"  autoplay muted></video>
+    </div>
+    <div id="bird">
+        <video playsinline src="../static/cutscenes/bird.mp4" autoplay muted></video>
+    </div>
+    <div id="egghead">
+        <video playsinline src="../static/cutscenes/egghead.mp4" autoplay muted></video>
+    </div>
+    <div id="easterEggCounter">Easter eggs found: 0 / 5</div>
+    <canvas class="webgl"></canvas>
+    
+		<script type="x-shader/x-vertex" id="vertexshader">
+
+			varying vec2 vUv;
+
+			void main() {
+
+				vUv = uv;
+
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+			}
+
+		</script>
+
+		<script type="x-shader/x-fragment" id="fragmentshader">
+
+			uniform sampler2D baseTexture;
+			uniform sampler2D bloomTexture;
+
+			varying vec2 vUv;
+
+			void main() {
+
+				gl_FragColor = ( texture2D( baseTexture, vUv ) + vec4( 1.0 ) * texture2D( bloomTexture, vUv ) );
+
+			}
+
+		</script>
+</body>
+
+</html>
