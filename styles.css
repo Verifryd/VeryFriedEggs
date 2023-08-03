@@ -93,3 +93,12 @@ button:hover {
   width: 400px;
   height: 400px;
 }
+
+.backButton, .nextButton {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+body.index {
+    background: #fff;
+}
+
