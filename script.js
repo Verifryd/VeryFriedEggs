@@ -1,50 +1,47 @@
-var purchaseButton = document.getElementById('purchaseButton');
-if (purchaseButton) {
-    purchaseButton.addEventListener('click', function() {
-        // Hide the product image and show the video player
+var fabergeButton = document.getElementById('fabergeButton');
+if (fabergeButton) {
+    fabergeButton.addEventListener('click', function() {
         document.getElementById('fabergeImage').style.display = 'none';
         var video = document.getElementById('productVideo');
         video.style.display = 'block';
         video.play();
 
-        // When the video ends, change the Fabergé Egg image to the EarlyEggcessA GIF
         video.addEventListener('ended', function() {
             document.getElementById('fabergeImage').src = 'assets/EarlyEggcessA.gif';
             document.getElementById('fabergeImage').style.display = 'block';
+            document.getElementById('nextButton').disabled = false;
         });
     });
 }
 
-var purchaseButton = document.getElementById('purchaseButton');
-if (purchaseButton) {
-    purchaseButton.addEventListener('click', function() {
-        // Hide the product image and show the video player
+var kringleButton = document.getElementById('kringleButton');
+if (kringleButton) {
+    kringleButton.addEventListener('click', function() {
         document.getElementById('kringleImage').style.display = 'none';
         var video = document.getElementById('productVideo');
         video.style.display = 'block';
         video.play();
 
-        // When the video ends, change the Fabergé Egg image to the EarlyEggcessA GIF
         video.addEventListener('ended', function() {
-            document.getElementById('fabergeImage').src = 'assets/EarlyEggcessB.gif';
-            document.getElementById('fabergeImage').style.display = 'block';
+            document.getElementById('kringleImage').src = 'assets/EarlyEggcessB.gif';
+            document.getElementById('kringleImage').style.display = 'block';
+            document.getElementById('nextButton').disabled = false;
         });
     });
 }
 
-var purchaseButton = document.getElementById('purchaseButton');
-if (purchaseButton) {
-    purchaseButton.addEventListener('click', function() {
-        // Hide the product image and show the video player
+var dpteButton = document.getElementById('dpteButton');
+if (dpteButton) {
+    dpteButton.addEventListener('click', function() {
         document.getElementById('DPtEImage').style.display = 'none';
         var video = document.getElementById('productVideo');
         video.style.display = 'block';
         video.play();
 
-        // When the video ends, change the Fabergé Egg image to the EarlyEggcessA GIF
         video.addEventListener('ended', function() {
-            document.getElementById('fabergeImage').src = 'assets/EarlyEggcessC.gif';
-            document.getElementById('fabergeImage').style.display = 'block';
+            document.getElementById('DPtEImage').src = 'assets/EarlyEggcessC.gif';
+            document.getElementById('DPtEImage').style.display = 'block';
+            document.getElementById('nextButton').disabled = false;
         });
     });
 }
