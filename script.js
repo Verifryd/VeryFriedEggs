@@ -2,7 +2,7 @@ var fabergeButton = document.getElementById('purchaseButton');
 var fabergeVideo = document.getElementById('productVideo');
 var kringleButton = document.getElementById('kringleproductButton');
 var kringleVideo = document.getElementById('kringleproductVideo');
-var dpteButton = document.getElementById('dpteproductButton');
+var dpteButton = document.getElementById('dptepurchaseButton');
 var dpteVideo = document.getElementById('dpteproductVideo');
 
 if (fabergeButton && fabergeVideo) {
