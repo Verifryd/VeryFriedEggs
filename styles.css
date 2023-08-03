@@ -37,3 +37,8 @@ body {
     width: 150px;
     height: auto;
 }
+
+img {
+    max-width: 100%; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
+    height: auto; /* This will keep the image's aspect ratio intact */
+}
