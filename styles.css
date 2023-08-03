@@ -75,3 +75,9 @@ button {
 button:hover {
   background-color: red; /* Adjust as needed */
 }
+
+#productVideo {
+  width: 400px;
+  height: 400px;
+}
+
