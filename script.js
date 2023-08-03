@@ -60,4 +60,9 @@ document.getElementById('kringleVideo').addEventListener('ended', function() {
     document.getElementById('nextButton').disabled = false;
 });
 
+window.onload = function() {
+    // your code here
+};
+
+
 
