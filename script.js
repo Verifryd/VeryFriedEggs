@@ -12,6 +12,8 @@ if (fabergeButton && fabergeVideo) {
         fabergeVideo.style.display = 'block';
         fabergeVideo.play();
 
+        this.style.display = 'none';
+
         // When the video ends, change the Fabergé Egg image to the EarlyEggcessA GIF
         // and hide the video
         fabergeVideo.addEventListener('ended', function() {
@@ -24,6 +26,8 @@ if (fabergeButton && fabergeVideo) {
     fabergeVideo.addEventListener('ended', function() {
         // Enable the "Next Egg" button when the video has ended
         document.getElementById('nextButton').disabled = false;
+
+        document.getElementById('nextButton').style.display = 'block';
     });
 }
 
@@ -34,12 +38,16 @@ if (kringleButton && kringleVideo) {
         kringleVideo.style.display = 'block';
         kringleVideo.play();
 
+        this.style.display = 'none';
+
         // When the video ends, change the Fabergé Egg image to the EarlyEggcessA GIF
         // and hide the video
         kringleVideo.addEventListener('ended', function() {
             document.getElementById('kringleImage').src = 'assets/EarlyEggcessB.gif';
             document.getElementById('kringleImage').style.display = 'block';
             kringleVideo.style.display = 'none';
+
+            document.getElementById('nextButton').style.display = 'block';
         });
     });
 
@@ -56,12 +64,16 @@ if (dpteButton && dpteVideo) {
         dpteVideo.style.display = 'block';
         dpteVideo.play();
 
+        this.style.display = 'none';
+
         // When the video ends, change the Fabergé Egg image to the EarlyEggcessA GIF
         // and hide the video
         dpteVideo.addEventListener('ended', function() {
             document.getElementById('DPtEImage').src = 'assets/EarlyEggcessC.gif';
             document.getElementById('DPtEImage').style.display = 'block';
             dpteVideo.style.display = 'none';
+
+            document.getElementById('nextButton').style.display = 'block';
         });
     });
 
