@@ -59,7 +59,7 @@ body {
 }
 
 img {
-    max-width: 75%; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
+    max-width: 100%; /* This will make the image responsive, i.e., its maximum width will be 100% of its containing element */
     height: auto; /* This will keep the image's aspect ratio intact */
 }
 
@@ -101,4 +101,26 @@ button:hover {
 body.index {
     background: #fff;
 }
+
+@media (max-width: 600px) {
+  #fabergeImage {
+    width: 75%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #kringleImage {
+    width: 75%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #dpteImage {
+    width: 75%;
+    height: auto;
+  }
+}
+
 
