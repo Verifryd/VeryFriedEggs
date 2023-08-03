@@ -61,3 +61,9 @@ document.getElementById('purchaseButton').addEventListener('click', function() {
     });
 });
 
+document.getElementById('productVideo').addEventListener('ended', function() {
+    // Enable the "Next Egg" button when the video has ended
+    document.getElementById('nextButton').disabled = false;
+});
+
+
