@@ -16,7 +16,7 @@ body {
 }
 
 .product {
-    flex: 1 0 200px;  /* Adjust the '200px' to whatever minimum width you want for your products */
+    flex: 1 0 100px;  /* Adjust the '200px' to whatever minimum width you want for your products */
     margin: 10px;
     min-height: 100vh; /* This makes sure the product element takes at least the full height of the viewport */
     width: 100%;
