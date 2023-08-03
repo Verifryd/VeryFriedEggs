@@ -27,7 +27,6 @@ if (fabergeButton && fabergeVideo) {
         // Enable the "Next Egg" button when the video has ended
         document.getElementById('nextButton').disabled = false;
 
-        document.getElementById('nextButton').style.display = 'block';
     });
 }
 
@@ -46,8 +45,6 @@ if (kringleButton && kringleVideo) {
             document.getElementById('kringleImage').src = 'assets/EarlyEggcessB.gif';
             document.getElementById('kringleImage').style.display = 'block';
             kringleVideo.style.display = 'none';
-
-            document.getElementById('nextButton').style.display = 'block';
         });
     });
 
@@ -72,8 +69,6 @@ if (dpteButton && dpteVideo) {
             document.getElementById('DPtEImage').src = 'assets/EarlyEggcessC.gif';
             document.getElementById('DPtEImage').style.display = 'block';
             dpteVideo.style.display = 'none';
-
-            document.getElementById('nextButton').style.display = 'block';
         });
     });
 
