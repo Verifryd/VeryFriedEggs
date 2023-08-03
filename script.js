@@ -66,4 +66,28 @@ document.getElementById('productVideo').addEventListener('ended', function() {
     document.getElementById('nextButton').disabled = false;
 });
 
+var kringleImage = document.getElementById('kringleImage');
+var kringleVideo = document.getElementById('productVideo');
+var kringleButton = document.getElementById('purchaseButton');
+
+if (kringleImage && kringleVideo && kringleButton) {
+    kringleButton.addEventListener('click', function() {
+        // Hide the product image and show the video player
+        kringleImage.style.display = 'none';
+        kringleVideo.style.display = 'block';
+        kringleVideo.play();
+
+        // When the video ends, change the Kringle Kronic image to the EarlyEggcessB GIF
+        kringleVideo.addEventListener('ended', function() {
+            kringleImage.src = 'assets/EarlyEggcessB.gif';
+            kringleImage.style.display = 'block';
+            kringleVideo.style.display = 'none';
+
+            // Enable the "Next Egg" button when the video has ended
+            document.getElementById('nextButton').disabled = false;
+        });
+    });
+}
+
+
 
